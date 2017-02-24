@@ -1,16 +1,24 @@
 <?php
+/**
+ * File containing the KnockoutType class part of the BcKnockoutJSBundle package.
+ *
+ * @copyright Copyright (C) Brookins Consulting. All rights reserved.
+ * @license For full copyright and license information view LICENSE and COPYRIGHT.md file distributed with this source code.
+ * @version //autogentag//
+ */
 
-namespace Padam87\KnockoutJSBundle\Form\Extension;
+namespace BrookinsConsulting\BcKnockoutJSBundle\Form\Extension;
 
 use Symfony\Component\Form\AbstractTypeExtension;
 use Symfony\Component\Form\FormInterface;
 use Symfony\Component\Form\FormView;
-use JMS\DiExtraBundle\Annotation as DI;
+use JMS\DiExtraBundle\Annotation\Service;
+use JMS\DiExtraBundle\Annotation\Tag;
 use Doctrine\Common\Collections\Collection;
 
 /**
- * @DI\Service("form.type_extension.knockout")
- * @DI\Tag("form.type_extension", attributes = { "alias" = "form" })
+ * @Service("form.type_extension.knockout")
+ * @Tag("form.type_extension", attributes = {"alias" = "form", "extended_type" = "Symfony\Component\Form\Extension\Core\Type\FormType"})
  */
 class KnockoutExtension extends AbstractTypeExtension
 {

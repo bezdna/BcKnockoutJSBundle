@@ -1,6 +1,13 @@
 <?php
+/**
+ * File containing the DefaultControllerTest class part of the BcKnockoutJSBundle package.
+ *
+ * @copyright Copyright (C) Brookins Consulting. All rights reserved.
+ * @license For full copyright and license information view LICENSE and COPYRIGHT.md file distributed with this source code.
+ * @version //autogentag//
+ */
 
-namespace Padam87\KnockoutJSBundle\Tests\Controller;
+namespace BrookinsConsulting\BcKnockoutJSBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 

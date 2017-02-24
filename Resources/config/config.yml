@@ -1,4 +1,2 @@
 twig:
-    form:
-        resources:
-            - 'Padam87KnockoutJSBundle:Form:knockout.html.twig'
+    form_themes: ['BcKnockoutJSBundle:Form:knockout.html.twig']

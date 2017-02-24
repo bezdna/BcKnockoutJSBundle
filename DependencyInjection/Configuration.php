@@ -1,6 +1,13 @@
 <?php
+/**
+ * File containing the Configuration class part of the BcKnockoutJSBundle package.
+ *
+ * @copyright Copyright (C) Brookins Consulting. All rights reserved.
+ * @license For full copyright and license information view LICENSE and COPYRIGHT.md file distributed with this source code.
+ * @version //autogentag//
+ */
 
-namespace Padam87\KnockoutJSBundle\DependencyInjection;
+namespace BrookinsConsulting\BcKnockoutJSBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;

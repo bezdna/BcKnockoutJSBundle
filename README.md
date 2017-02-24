@@ -1,4 +1,4 @@
-# KnockoutJS Bundle #
+# BcKnockoutJSBundle
 
 Integrates knockout.js into Symfony2, provides automatic code generation for collections.
 
@@ -20,47 +20,47 @@ I have added the items field with the KnockoutType, which extends the Collection
 
 ### 2.1. Composer:
 
-    "padam87/knockout-js-bundle": "dev-master",
+    "brookinsconsulting/bcknockoutjsbundle": "dev-master",
 
 ### 2.2. AppKernel:
 
     $bundles = array(
-		...
-        new Padam87\KnockoutJSBundle\Padam87KnockoutJSBundle(),
+        ...
+        new BrookinsConsulting\BcKnockoutJSBundle\BcKnockoutJSBundle(),
     );
 
 ### 2.3. config.yml:
 
-	imports:
-	    ...
-	    - { resource: "@Padam87KnockoutJSBundle/Resources/config/config.yml" }
+    imports:
+        ...
+        - { resource: "@BcKnockoutJSBundle/Resources/config/config.yml" }
 
                 
-	jms_di_extra:
-	    locations:
-	        all_bundles: false
-	        bundles: [Padam87KnockoutJSBundle]
+    jms_di_extra:
+        locations:
+            all_bundles: false
+            bundles: [BcKnockoutJSBundle]
+            directories: ["%kernel.root_dir%/../src"]
 
-jms\_di\_extra configuration is unnecessary if you have set all_bundles to true
+jms\_di\_extra configuration is unnecessary if you have set all_bundles to true which is strongly discouraged for performance reasons by the upstream dependant bundle in question.
 
 ### 2.4. Add the js to your page.
 
-    <script src="{{ asset('bundles/padam87knockoutjs/js/knockout-2.1.0.js') }}"></script>
+    <script src="{{ asset('bundles/bcknockoutjs/js/knockout-2.1.0.js') }}"></script>
 
 ### 2.5. Create your view
 
-	{{ knockout(form.vars.knockout)|raw }}
+    {{ knockout(form.vars.knockout)|raw }}
     {{ form_widget(form) }}
 
 ## 3. Dependencies
 
-None. For testing purposes I used my BaseBundle, if you want to test it, you have to include it in your composer.json file too.
+This package does infact depend upon the 'jms/di-extra-bundle' bundle.
+ 
+For testing purposes the original author used his now private BaseBundle, if you want to test it, you have to include it in your composer.json file too.
 
 ## 4. Stuff to do
 
 - Generator. Right now the command is there, but its not working properly.
 
-
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/Padam87/knockoutjsbundle/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 

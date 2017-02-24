@@ -1,6 +1,13 @@
 <?php
+/**
+ * File containing the GenerateCommand class part of the BcKnockoutJSBundle package.
+ *
+ * @copyright Copyright (C) Brookins Consulting. All rights reserved.
+ * @license For full copyright and license information view LICENSE and COPYRIGHT.md file distributed with this source code.
+ * @version //autogentag//
+ */
 
-namespace Padam87\KnockoutJSBundle\Command;
+namespace BrookinsConsulting\BcKnockoutJSBundle\Command;
 
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputArgument;
@@ -12,7 +19,7 @@ class GenerateCommand extends Command
     protected function configure()
     {
         $this
-            ->setName('knockout:generate')
+            ->setName('bc:bcknockoutjs:generate')
             ->setDescription('Generates a VM for the given form')
             ->addArgument('form', InputArgument::REQUIRED, 'namespaced name of the form')
         ;

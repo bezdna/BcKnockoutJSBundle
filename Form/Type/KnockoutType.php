@@ -1,14 +1,22 @@
 <?php
+/**
+ * File containing the KnockoutType class part of the BcKnockoutJSBundle package.
+ *
+ * @copyright Copyright (C) Brookins Consulting. All rights reserved.
+ * @license For full copyright and license information view LICENSE and COPYRIGHT.md file distributed with this source code.
+ * @version //autogentag//
+ */
 
-namespace Padam87\KnockoutJSBundle\Form\Type;
+namespace BrookinsConsulting\BcKnockoutJSBundle\Form\Type;
 
 use Symfony\Component\Form\Extension\Core\Type\CollectionType;
 use Symfony\Component\Form\FormBuilderInterface;
-use JMS\DiExtraBundle\Annotation as DI;
+use JMS\DiExtraBundle\Annotation\Service;
+use JMS\DiExtraBundle\Annotation\Tag;
 
 /**
- * @DI\Service("form.type.knockout")
- * @DI\Tag("form.type", attributes = { "alias" = "knockout" })
+ * @Service("form.type.knockout")
+ * @Tag("form.type", attributes = { "alias" = "knockout" })
  */
 class KnockoutType extends CollectionType
 {

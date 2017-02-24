@@ -1,17 +1,28 @@
 {
-    "name": "padam87/knockout-js-bundle",
+    "name": "brookinsconsulting/bcknockoutjsbundle",
     "type": "symfony-bundle",
-    "description": "Symfony KnockoutJSBundle",
-    "keywords": ["symfony", "knockoutjs", "javascript", "mvvm"],
-    "homepage": "https://github.com/Padam87/KnockoutJSBundle",
+    "description": "Symfony BcKnockoutJSBundle",
+    "keywords": ["symfony", "knockoutjs", "knockout", "javascript", "mvvm"],
+    "homepage": "https://github.com/brookinsconsulting/BcKnockoutJSBundle",
     "authors": [
         {
+            "name": "Brookins Consulting",
+            "email": "info@brookinsconsulting.com",
+            "role": "Developer"
+        },
+        {
             "name": "Adam Prager",
-            "email": "prager.adam87@gmail.com"
+            "email": "prager.adam87@gmail.com",
+            "role": "Author"
         }
     ],
-    "autoload": {
-        "psr-0": { "Padam87\\KnockoutJSBundle": "" }
+    "require": {
+        "php": ">=5.6.0",
+        "symfony/symfony": "3.2.*",
+        "jms/di-extra-bundle": "^1.8"
     },
-    "target-dir": "Padam87/KnockoutJSBundle"
+    "autoload": {
+        "psr-0": { "BrookinsConsulting\\BcKnockoutJSBundle": "" }
+    },
+    "target-dir": "BrookinsConsulting/BcKnockoutJSBundle"
 }

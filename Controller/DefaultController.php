@@ -1,12 +1,19 @@
 <?php
+/**
+ * File containing the DefaultController class part of the BcKnockoutJSBundle package.
+ *
+ * @copyright Copyright (C) Brookins Consulting. All rights reserved.
+ * @license For full copyright and license information view LICENSE and COPYRIGHT.md file distributed with this source code.
+ * @version //autogentag//
+ */
 
-namespace Padam87\KnockoutJSBundle\Controller;
+namespace BrookinsConsulting\BcKnockoutJSBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 
-use Padam87\KnockoutJSBundle\Form\OrderType;
+use BrookinsConsulting\BcKnockoutJSBundle\Form\OrderType;
 
 /**
  * @Route("/ko")
@@ -33,7 +40,7 @@ class DefaultController extends Controller
             $em->persist($order);
             $em->flush();
 
-            return $this->redirect($this->generateUrl("padam87_knockoutjs_default_index"));
+            return $this->redirect($this->generateUrl("bcknockoutjs_default_index"));
         }
 
         return array(

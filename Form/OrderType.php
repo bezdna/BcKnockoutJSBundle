@@ -1,6 +1,13 @@
 <?php
+/**
+ * File containing the OrderType class part of the BcKnockoutJSBundle package.
+ *
+ * @copyright Copyright (C) Brookins Consulting. All rights reserved.
+ * @license For full copyright and license information view LICENSE and COPYRIGHT.md file distributed with this source code.
+ * @version //autogentag//
+ */
 
-namespace Padam87\KnockoutJSBundle\Form;
+namespace BrookinsConsulting\BcKnockoutJSBundle\Form;
 
 use Symfony\Component\Form\FormBuilderInterface;
 
