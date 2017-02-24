@@ -46,7 +46,7 @@ jms\_di\_extra configuration is unnecessary if you have set all_bundles to true 
 
 ### 2.4. Add the js to your page.
 
-    <script src="{{ asset('bundles/bcknockoutjs/js/knockout-2.1.0.js') }}"></script>
+    <script src="{{ asset('bundles/bcknockoutjs/js/knockout-3.4.1.js') }}"></script>
 
 ### 2.5. Create your view
 
