@@ -4,6 +4,7 @@
     "description": "Symfony BcKnockoutJSBundle",
     "keywords": ["symfony", "knockoutjs", "knockout", "javascript", "mvvm"],
     "homepage": "https://github.com/brookinsconsulting/BcKnockoutJSBundle",
+    "license": "MIT",
     "authors": [
         {
             "name": "Brookins Consulting",
