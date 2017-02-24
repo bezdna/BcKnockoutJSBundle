@@ -35,7 +35,7 @@ I have added the items field with the KnockoutType, which extends the Collection
         ...
         - { resource: "@BcKnockoutJSBundle/Resources/config/config.yml" }
 
-    # BcKockoutJS Bundle Configuration
+    # BcKnockoutJS Bundle Configuration
     jms_di_extra:
         locations:
             all_bundles: false
